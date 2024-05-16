@@ -1,0 +1,26 @@
+#gradient-canvas{
+  --gradient-color-1: #16e7dd;
+  --gradient-color-2: #6fc0f0;
+  --gradient-color-3: #7038ff;
+  --gradient-color-4: #570897;
+  --gradient-color-4: #4B0082;
+}
+
+
+.mine{
+  text-wrap: balance;
+}
+
+.g-header{
+  /* background: linear-gradient(to right,#09746e,#6fc0f0,#7038ff,#570897 ); */
+  background-color: #408ebb
+}
+
+.card{
+  background: linear-gradient(to right,#09746e,#6fc0f0,#7038ff,#570897 );
+}
+
+#scrollbar{
+  scrollbar-width: none;
+}
+

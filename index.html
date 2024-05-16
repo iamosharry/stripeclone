@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="box-border overflow-x-hidden ">
+
+  <header class="fixed top-[0] w-full z-[500]">
+    <nav class="flex justify-between items-center py-4 px-7 md:px-[8%] relative">
+      <div id="logo">
+        <img src="assets/logo-white.svg" alt="">
+        <img class="hidden" id="logo-2" src="assets/logo-white.svg" alt="">
+      </div>
+      <ul class="hidden md:flex space-x-5 ">
+        <li class="text-white hover:text-gray-700 font-medium"><a href="#">MENU</a></li>
+        <li class="text-white hover:text-gray-700 font-medium"><a href="#">SERVICES</a></li>
+        <li class="text-white hover:text-gray-700 font-medium"><a href="#">PROMO</a></li>
+        <li class="text-white hover:text-gray-700 font-medium"><a href="#">ABOUT</a></li>
+        <li class="text-white hover:text-gray-700 font-medium"><a href="#">SOURCES</a></li>
+        <li class="text-white hover:text-gray-700 font-medium"><a href="#">CONTACT</a></li>
+      </ul>
+
+      <ul class="md:hidden hidden absolute bottom-[-480px] bg-white  left-0  w-full flex-column space-y-4" id="mobile-menu"> 
+        <li class="relative border-left-0 border-b-1  py-3 px-4 font-lighter hover:bg-blue-400 hover:text-white"><a href="#">MENU</a>
+          <i class="absolute top-[50%] transform translate-y-[-50%] right-[20px] ri-arrow-drop-down-line text-3xl"></i>
+        </li>
+        <li class="relative  border-b-1 py-3 px-4 font-lighter hover:bg-blue-400 hover:text-white"><a href="#">SERVICES</a>
+          <i class="absolute top-[50%] transform translate-y-[-50%] right-[20px] ri-arrow-drop-down-line text-3xl"></i>
+        </li>
+        <li class="relative border-b-1 py-3 px-4 font-lighter hover:bg-blue-400 hover:text-white"><a href="#">PROMO</a>
+          <i class="absolute top-[50%] transform translate-y-[-50%] right-[20px] ri-arrow-drop-down-line text-3xl"></i>
+        </li>
+        <li class="relative border-b-1 py-3 px-4 font-lighter hover:bg-blue-400 hover:text-white"><a href="#">ABOUT</a>
+          <i class="absolute top-[50%] transform translate-y-[-50%] right-[20px] ri-arrow-drop-down-line text-3xl"></i>
+        </li>
+        <li class="relative border-b-1 py-3 px-4 font-lighter hover:bg-blue-400 hover:text-white"><a href="#">SOURCES</a>
+          <i class="absolute top-[50%] transform translate-y-[-50%] right-[20px] ri-arrow-drop-down-line text-3xl"></i>
+        </li>
+        <li class="relative border-b-1 py-3 px-4 font-lighter hover:bg-blue-400 hover:text-white"><a href="#">CONTACT</a>
+          <i class="absolute top-[50%] transform translate-y-[-50%] right-[20px] ri-arrow-drop-down-line text-3xl"></i>
+        </li>
+        <li class="text-center py-5">
+          <button class="border py-4 px-20 rounded-[30px] bg-purple-800 text-white font-2xl hover:border-blue-500 hover:bg-transparent hover:text-blue-700 transition-all font-bold">Order Now</button>
+        </li>
+        
+      </ul>
+
+      <div class="hidden lg:flex">
+        <button class="py-2 px-7 rounded-[30px] bg-transparent shadow-lg font-bold text-white font-2xl hover:border-blue-500 hover:bg-transparent hover:text-blue-700 transition-all">Order Now</button>
+      </div>
+
+      <div class="md:hidden" id="hamburger">
+        <i class="ri-menu-line text-3xl cursor-pointer text-white"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="relative flex lg:space-x-[100px] pt-[1%] overflow-x-hidden">
+    <canvas class="absolute w-full h-5/6 z-[-1] transform skew-y-[-10deg] top-[-10%] md: top-[-25%]" id="gradient-canvas"></canvas>
+    
+    <div class="px-4 pt-[20%] pl-[30px] sm:pl-[50px] md:pl-[50px] sm:pt-[15%] md:pt-[8%]">
+      <h1 class="text-5xl sm:text-5xl md:text-7xl font-bold  lg:leading-[1.2em] mt-[40px]">Payments <br> infrastructure <br>for the world</h1>
+      <p class="mt-[20px] font-bold">Top of compaines alll over the world use Swipe's seamless <br> platform to manage their business's entire financial <br> transaction infrastructure online</p>
+      <div class="mt-[30px] flex">
+        <button class="flex justify-center  w-40 items-center bg-purple-900 py-2 px-5 rounded-[30px] text-white relative text-lg font-semibold">Start now
+          <img class="absolute right-4 top-3" src="assets/arrow-right-light.svg" alt="">
+        </button>
+        <button class="flex justify-center  w-50 items-center py-2 px-5 rounded-[30px] text-purple-900 relative text-lg font-semibold">Contact sales
+          <img class="absolute right-[-8px] top-3" src="assets/arrow-right-purple.svg" alt="">
+        </button>
+      </div>
+    </div>
+    
+    <div class="hidden lg:flex md:pt-[5%] w-[300px]">
+      <img class="w-full block" src="assets/hero-phone.png" alt="">
+    </div>
+  </main>
+
+  <section class="sm:hidden my-[100px] px-[20px]">
+    
+    <div class="flex my-[40px]">
+      <img class="w-1/2 object-contain" src="assets/amazon.png" alt="">
+      <img class="w-1/2 object-contain" src="assets/slack.png" alt="">
+    </div>
+    <div class="flex my-[40px]">
+      <img class="w-1/2 object-contain" src="assets/shopify.png" alt="">
+      <img class="w-1/2 object-contain" src="assets/google.png" alt="">
+    </div>
+    <div class="flex my-[40px]">
+      <img class="w-1/2 object-contain" src="assets/lyft.png" alt="">
+      <img class="w-1/2 object-contain" src="assets/zoom.png" alt="">
+    </div>
+  </section>
+
+  <section class="hidden sm:block px-[40px] my-[80px] lg:hidden">
+    <div class="flex my-[40px]">
+      <img class="w-1/5 object-contain" src="assets/instacart.png" alt="">
+      <img class="w-1/5 object-contain" src="assets/salesforce.png" alt="">
+      <img class="w-1/5 object-contain" src="assets/amazon.png" alt="">
+      <img class="w-1/5 object-contain" src="assets/slack.png" alt="">
+    </div>
+    <div class="flex my-[40px]">
+      <img class="w-1/5 object-contain" src="assets/lyft.png" alt="">
+      <img class="w-1/5 object-contain" src="assets/zoom.png" alt="">
+      <img class="w-1/5 object-contain" src="assets/shopify.png" alt="">
+      <img class="w-1/5 object-contain" src="assets/google.png" alt="">
+    </div>
+  </section>
+
+  <section class="hidden lg:block px-[90px]">
+    <div class="flex my-[40px] space-x-[80px]">
+      <img class="w-44 object-contain" src="assets/instacart.png" alt="">
+      <img class="w-44 object-contain" src="assets/salesforce.png" alt="">
+      <img class="w-44 object-contain" src="assets/amazon.png" alt="">
+      <img class="w-44 object-contain" src="assets/slack.png" alt="">
+    </div>
+    <div class="flex my-[40px] space-x-[80px]">
+      <img class="w-44 object-contain" src="assets/lyft.png" alt="">
+      <img class="w-44 object-contain" src="assets/zoom.png" alt="">
+      <img class="w-44 object-contain" src="assets/shopify.png" alt="">
+      <img class="w-44 object-contain" src="assets/google.png" alt="">
+    </div>
+  </section>
+
+  <section class="lg:my-[150px] md:my-[130px] my-[150px]">
+    <div class="flex-column text-center lg:pl-[50px]">
+      <p class="text-purple-900 font-bold text-lg my-[20px] sm:text-left sm:pl-[50px]">Unified platform</p>
+      <h2 class="text-black font-bold text-2xl sm:text-left sm:pl-[50px]">All the payment products you'll <br> ever need</h2>
+      <div class="lg:flex">
+
+        <p class="mt-[30px] px-[30px] sm:px-[50px] font-medium text-left lg:w-1/2">
+          We've got everything you'll need and more to build websites and apps that handles payments, payouts, and much more.
+          Swipe's productspower payments <span class="text-purple-900 font-bold">for all kinds of retailers, all kinds of businesses, software platform & marketplaces, and everything</span> in between.
+        </p>
+        <p class="mt-[30px] px-[30px] sm:px-[50px] font-medium text-left">
+          We also help compaines tackle fraud, issue invoices, send virtual and <br> physcial cards, manage financing, wrangle business spend, and <br>much more.
+        </p>
+      </div>
+      <div class=" px-[30px] sm:px-[50px] my-[30px] md:text-left">
+        <button class="bg-purple-900 text-white rounded-[30px] py-[15px] px-[20px] w-full md:w-[200px]">Start now</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sm:flex space-x-2 justify-center md:justify-center md:space-x-10 lg:justify-start lg:space-x-0">
+      <div class="pl-[22%] mb-[40px] sm:pl-[5%] lg:pl-[8%]">
+        <img class="object-contain w-9/12 mb-[40px] sm:w-36 md:w-60 lg:w-80" src="assets/credit-card.png" alt="">
+        <img class="object-contain w-9/12 sm:w-36 md:w-60 lg:w-[70%]" src="assets/phone.png" alt="">
+      </div>
+      <div class="pl-[22%] sm:pl-[5%]">
+        <img class="object-contain w-9/12 mb-[40px] sm:w-64 md:w-80 lg:w-3/4" src="assets/slack-invoice.png" alt="">
+        <img class="object-contain w-9/12 sm:w-64 md:w-80 lg:w-3/4" src="assets/dash.png" alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="pl-[30px] sm:pl-[60px] lg:pl-[100px] py-[40px] md:py-[120px] lg:pt-[120px] mt-[50px] relative z-[100] lg:flex">
+    <canvas class="absolute w-[101%] bg-sky-950 h-[110%] left-[50%]  top-[-70px] z-[-1] transform skew-y-[-10deg] transform translate-x-[-50%] "></canvas>
+    <div>
+      <div class="my-[50px]">
+        <p class="text-blue-500 font-medium mb-[20px]">Designed For Engineers</p>
+        <h3 class="font-bold text-2xl mb-[20px] text-white">The world's best and the most <br> intuitive APIs</h3>
+        <p class="text-[14px] font-bold mb-[20px] text-white">We abstract the hard stuff away so your team can focus on <br> building new technology, instead of spending time and money reinventing the wheel </p>
+        <div>
+          <button class="bg-cyan-400 py-[10px] px-[20px] rounded-[30px] font-medium ">Start now <i class="ri-arrow-right-line text-blue"></i></button>
+        </div>
+      </div>
+  
+      <div class="sm:flex sm:items-center sm:space-x-10">
+        <div class="my-[40px] sm:w-[45%] md:w-[400px] lg:w-[300px]">
+          <img class="object-contain w-[30px] mb-[15px]" src="assets/tools-icon.png" alt="">
+          <h3 class="font-bold mb-[15px] text-white">Tools for all stacks</h3>
+          <p class="font-medium text-slate-200">We offer front-end and back-end libraries in some of the most widely used technologies, old and new.</p>
+          <a class="text-cyan-400 mt-[15px] block font-bold" href="#">See libraries <i class="ri-arrow-right-line text-blue"></i></a>
+        </div>
+        <div class="sm:w-[45%] md:w-[400px] lg:w-[300px]">
+          <img class="object-contain w-[30px] mb-[15px]" src="assets/cube-icon.png" alt="">
+          <h3 class="mb-[15px] font-bold text-white">Custom Integrations</h3>
+          <p class="font-medium text-slate-200">Use integration for systems like Shopify,Woocommerce,Netsuite, and more </p>
+          <a class="text-cyan-400 mt-[15px] block font-bold" href="#">Explore partners <i class="ri-arrow-right-line text-blue"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-[50px]">
+      <img class="object-contain w-[350px] rounded-[10px] mb-[20px]" src="assets/api-code.png" alt="">
+      <img class="object-contain w-[350px] rounded-[10px]" src="assets/terminal-code.png" alt="">
+    </div>
+  </section>
+
+  <section class="mt-[200px] pl-[30px] sm:px-[30px] lg:pl-[70px]">
+    <div>
+      <p class="text-purple-900 font-bold mb-[15px]">Why Swipe</p>
+      <h2 class="text-black font-bold text-xl mb-[30px] lg:mb-[50px] lg:text-3xl">A tech-first approach to finance</h2>
+      <div class="sm:hidden">
+        <div class="mb-[30px]">
+          <img class="object-contain w-[50px] mb-[10px]" src="assets/cloud-icon.png" alt="">
+          <h3 class="font-bold mb-[15px]">Efficient Always</h3>
+          <p class="font-medium">We've optimized every level of the <br>
+            finance stack, from integrations to <br>
+            prebuilt checkout flows - no detail has <br>
+            been spared.
+          </p>
+        </div>
+        <div class="mb-[30px]">
+          <img class="object-contain w-[50px] mb-[10px]" src="assets/cycle-icon.png" alt="">
+          <h3 class="font-bold mb-[15px]">Fast-Improving</h3>
+          <p class="font-medium">We make constant updates and <br>
+            improvements to help you stay on the <br>
+            cutting edge of your industry, deploying <br>
+            to production around 20X per day!
+          </p>
+        </div>
+        <div class="mb-[30px]">
+          <img class="object-contain w-[50px] mb-[10px]" src="assets/shield-icon.png" alt="">
+          <h3 class="font-bold mb-[15px]">Tried and True</h3>
+          <p class="font-medium">Our systems operate with 100% uptime, <br>
+            with scalability and uptime as a <br>
+            guarantee. Swipe is super duper <br>
+            certified so don't worry
+          </p>
+        </div>
+        <div class="mb-[30px]">
+          <img class="object-contain w-[50px] mb-[10px]" src="assets/bars-icon.png" alt="">
+          <h3 class="font-bold mb-[15px]">Crazy Optimized</h3>
+          <p class="font-medium">We use machine learning trained on <br>
+            billions of data points to help optimize <br>
+            all products, from fraud to revenue <br>
+            recovery and more
+          </p>
+        </div>
+      </div>
+      <div class="new hidden sm:flex space-x-5 md:space-x-40 lg:hidden">
+        <div>
+          <div class="mb-[30px]">
+            <img class="object-contain w-[50px] mb-[10px]" src="assets/cloud-icon.png" alt="">
+            <h3 class="font-bold mb-[15px]">Efficient Always</h3>
+            <p class="font-bold text-[14px]">We've optimized every level of the <br>
+              finance stack, from integrations to <br>
+              prebuilt checkout flows - no detail has <br>
+              been spared.
+            </p>
+          </div>
+          <div class="mb-[30px]">
+            <img class="object-contain w-[50px] mb-[10px]" src="assets/cycle-icon.png" alt="">
+            <h3 class="font-bold mb-[15px]">Fast-Improving</h3>
+            <p class="font-bold text-[14px]">We make constant updates and <br>
+              improvements to help you stay on the <br>
+              cutting edge of your industry, deploying <br>
+              to production around 20X per day!
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="mb-[30px]">
+            <img class="object-contain w-[50px] mb-[10px]" src="assets/shield-icon.png" alt="">
+            <h3 class="font-bold mb-[15px]">Trid and True</h3>
+            <p class="font-bold text-[14px]">Our systems operate with 100% uptime, <br>
+              with scalability and uptime as a <br>
+              guarantee. Swipe is super duper <br>
+              certified so don't worry
+            </p>
+          </div>
+          <div class="mb-[30px]">
+            <img class="object-contain w-[50px] mb-[10px]" src="assets/bars-icon.png" alt="">
+            <h3 class="font-bold mb-[15px]">Crazy Optimized</h3>
+            <p class="font-bold text-[14px]">We use machine learning trained on <br>
+              billions of data points to help optimize <br>
+              all products, from fraud to revenue <br>
+              recovery and more
+            </p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="hidden lg:flex lg:justify-between lg:w-[95%]">
+        <div class="mb-[30px]">
+          <img class="object-contain w-[50px] mb-[10px]" src="assets/cloud-icon.png" alt="">
+          <h3 class="font-bold mb-[15px]">Efficient Always</h3>
+          <p class="font-semibold text-[14px] lg:text-[13px] text-gray-900 lg:text-balance">We've optimized every level of the <br>
+            finance stack, from integrations to <br>
+            prebuilt checkout flows - no detail has <br>
+            been spared.
+          </p>
+        </div>
+        <div class="mb-[30px]">
+          <img class="object-contain w-[50px] mb-[10px]" src="assets/cycle-icon.png" alt="">
+          <h3 class="font-bold mb-[15px]">Fast-Improving</h3>
+          <p class="font-semibold text-[14px] lg:text-[13px]  text-gray-900 lg:text-balance">We make constant updates and <br>
+            improvements to help you stay on the <br>
+            cutting edge of your industry, deploying <br>
+            to production around 20X per day!
+          </p>
+        </div>
+        <div class="mb-[30px]">
+          <img class="object-contain w-[50px] mb-[10px]" src="assets/shield-icon.png" alt="">
+          <h3 class="font-bold mb-[15px]">Tried and True</h3>
+          <p class="font-semibold text-[14px] lg:text-[13px] text-gray-900 lg:text-balance">Our systems operate with 100% uptime, <br>
+            with scalability and uptime as a <br>
+            guarantee. Swipe is super duper <br>
+            certified so don't worry
+          </p>
+        </div>
+        <div class="mb-[30px]">
+          <img class="object-contain w-[50px] mb-[10px]" src="assets/bars-icon.png" alt="">
+          <h3 class="font-bold mb-[15px]">Crazy Optimized</h3>
+          <p class="font-semibold text-[14px] lg:text-[13px] text-gray-900 lg:text-balance">We use machine learning trained<br> on
+            billions of data points to help<br> optimize
+            all products, from fraud to<br> revenue
+            recovery and more
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mt-[200px] mb-[100px] bg-sky-950 py-[100px] relative ">
+    <canvas class="absolute w-[100%] h-[100%] bg-sky-950 z-[-10] top-[-100px] transform skew-y-[-8deg]"></canvas>
+    
+    <div class="px-[30px] lg:px-[60px ] z-[100] relative overflow-x-hidden" id="scrollbar">
+      <div class="w-[500px] z-[-1] absolute lg:top-[0%] lg:right-[20%]">
+        <img class="w-[100%] block filter opacity-[0.2]" src="assets/global-graphic.png" alt="">
+      </div>
+      <div class="mb-[40px]">
+        <p class="text-cyan-500 font-bold mb-4">Global scale</p>
+        <h2 class="text-3xl text-white font-bold mb-4">A structure for global <br> businesses</h2>
+        <p class="text-[15px] leading-[1.7em] text-white font-medium sm:w-[542px]">Swipe makes moving money simple, borderless, and programable
+          just like the rest of the internet. We have teams all over the world and
+          we process billions and billions of dollars yearly for <span class="text-cyan-500">startups, Fortune
+            500s, and everrything in between
+          </span> 
+        </p>
+      </div>
+
+      <div class="md:flex md:space-x-[20px]">
+        <div >
+          <span class="border-l-2 text-white border-cyan-500 pl-3 py-[5px] pb-[10px] font-bold">250M+</span>
+          <p class="my-[15px] font-medium md:text-[15px] text-white">
+            API requests each day, peaking at 15,00 requests a second.
+          </p>
+        </div>
+        <div>
+          <span class="border-l-2 text-white border-cyan-500 pl-3 py-[5px] pb-[10px] font-bold">97%</span>
+          <p class="my-[15px] font-medium md:text-[15px] text-white">of US adults have bought from
+            businesses that use Swipe
+          </p>
+        </div>
+        <div>
+          <span class="border-l-2 border-cyan-500 text-white pl-3 py-[5px] pb-[10px] font-bold">135%</span>
+          <p class="my-[15px] font-medium md:text-[15px] text-white">currencies and payment methods
+            supported
+          </p>
+        </div>
+        <div>
+          <span class="border-l-2 border-cyan-500 text-white pl-3 py-[5px] pb-[10px] font-bold">35%</span>
+          <p class="my-[15px] font-medium md:text-[15px] text-white">countries with local, acquiring,
+            optimizing acceptance rates
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="px-[30px] ">
+    <div class="md:flex md:items-center md:space-x-5 lg:justify-center">
+      <div>
+        <p class="text-purple-900 font-bold mb-[10px] lg:text-xl">Virtual events</p>
+        <h2 class="font-bold text-3xl mb-[10px] md:text-3xl lg:text-3xl">Check out Sessions now!</h2>
+        <p class="font-medium mb-[15px] max-w-[400px]">Swipe Sessions is our annual conference - it's now available to watch on demand! Check it out and become an "internet economy"
+          genius, and see how Swipe can transform the way you do business online
+        </p>
+        <div>
+          <button class="py-[10px] px-[20px] bg-purple-900 text-white rounded-[20px]">Start now <i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+      <div class="border rounded-[15px] overflow-hidden relative shadow-xl my-[40px] max-w-[590px] md:flex-1">
+        <img class="w-[70px] h-[70px] rounded-[50%] absolute top-[53%] transform translate-y-[-50%] left-[10%]" src="assets/avatar1.png" alt="">
+        <img class="w-[70px] h-[70px] rounded-[50%] absolute top-[53%] transform translate-y-[-50%] left-[22%]" src="assets/avatar2.png" alt="">
+        <canvas class="absolute w-[100%] h-[60%] z-[-1] transform skew-y-[-7deg] top-[-40px] card"></canvas>
+        <div class="py-[60px]  flex justify-center md:px-[30px]">
+          <img class="w-[300px] object-contain" src="assets/swipe-sessions.png" alt="">
+        </div>
+        
+        <div class="py-[30px] pt-[100px] pl-[40px]">
+          <p class="text-purple-900 font-bold mb-[20px]">Keynote</p>
+          <p class="text-black font-bold">Everything you need to know<br>about the internet economy</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="my-[100px]">
+    <div class="pl-[30px] lg:flex lg:justify-center lg:space-x-10">
+      <div class="mb-[50px]">
+        <h2 class="font-bold text-2xl mb-[20px]">What are you waiting for?</h2>
+        <p class="font-medium mb-[20px] max-w-[450px]">Explore <a href="#" class="underline text-purple-900 font-semibold">Swipe</a> now, or create account that start accepting payment today! if you need a custom package for your business, let's chat today.</p>
+        <button class="bg-blue-900 py-[10px] px-[20px] rounded-[30px] text-white">Start now <i class="ri-arrow-right-line"></i></button>
+      </div>
+
+      <div class="pr-[30px] sm:flex sm:space-x-[100px] lg:space-x-20 lg:items-center">
+        <div class="mb-[50px]">
+          <img class="object-contain w-[50px] mb-[10x]" src="assets/shield-icon.png" alt="">
+          <h2 class="font-bold text-xl mb-[5px]">Always know what you pay</h2>
+          <p class="max-w-[280px]">Integrated per-transaction pricing with no hidden fees</p>
+          <div class="lg:mt-[10px]">
+            <a class="font-bold text-purple-900" href="#">Pricing details <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+  
+        <div class="mb-[50px]">
+          <img class="object-contain w-[40px] mb-[10px]" src="assets/bars-icon.png" alt="">
+          <h2 class="font-bold text-xl mb-[5px]">Start your integration</h2>
+          <p class="max-w-[280px]">Get up and running with stripe with as little as 10 minutes.</p>
+          <div class="lg:mt-[10px]">
+            <a class="font-bold text-purple-900" href="#">API reference <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-100 py-[50px]">
+    <div class="pl-[30px] flex-column space-y-[30px] sm:flex sm:space-x-[100px] sm:items-center md:pr-[50px] md:space-x-[0px] md:justify-between">
+      <div class="">
+        <img class="object-contain w-[150px] mb-[15px] sm:w-[200px]" src="assets/logo-dark.svg" alt="">
+        <p class="mb-[15px] font-bold"><i class="ri-send-plane-line font-bold"></i> United States</p>
+        <p class="font-bold"> <i class="ri-chat-3-line font-bold"></i>English(United States)</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-2xl">Products</h3>
+        <ul>
+          <li class="font-medium my-[10px]">Atlas</li>
+          <li class="font-medium my-[10px]">Billing</li>
+          <li class="font-medium my-[10px]">Invocing</li>
+          <li class="font-medium my-[10px]">Payment</li>
+          <li class="font-medium my-[10px]">Checkout</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-2xl">Use Cases</h3>
+        <ul>
+          <li class="font-medium my-[10px]">eCommerce</li>
+          <li class="font-medium my-[10px]">Saas</li>
+          <li class="font-medium my-[10px]">Marketplace</li>
+          <li class="font-medium my-[10px]">Embedded Finance</li>
+          <li class="font-medium my-[10px]">Cryto</li>
+        </ul>
+      </div>
+
+      <div class="sm:hidden md:block">
+        <h3 class="font-bold text-2xl">Resources</h3>
+        <ul>
+          <li class="font-medium my-[10px]">Support Center</li>
+          <li class="font-medium my-[10px]">Guides</li>
+          <li class="font-medium my-[10px]">Blog</li>
+          <li class="font-medium my-[10px]">Licenses</li>
+          <li class="font-medium my-[10px]">Privacy & Terms</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hidden sm:block pl-[30px] mt-[50px] md:hidden">
+      <h3 class="font-bold text-2xl">Resources</h3>
+      <ul>
+        <li class="font-medium my-[10px]">Support Center</li>
+        <li class="font-medium my-[10px]">Guides</li>
+        <li class="font-medium my-[10px]">Blog</li>
+        <li class="font-medium my-[10px]">Licenses</li>
+        <li class="font-medium my-[10px]">Privacy & Terms</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="gradient.js"></script>
+</body>
+</html>
